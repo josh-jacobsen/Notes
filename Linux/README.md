@@ -3,6 +3,7 @@
 ### Basic commands
 `apt-get update`
 
+The `-s` flag is simulate
 `apt-get -s upgrade`
 
 `apt-get -s full-upgrade`
