@@ -13,3 +13,10 @@ The `-s` flag is simulate
 
 ### Installing with apt-get
 1. Add file to `etc/atp/sources.list`, e.g. `deb http://download.virtualbox.org/virtualbox/debian xenial contrib`
+
+### Set up base install
+
+#### Install:
+
+Pip: `sudo apt-get install -y python-pip`
+Virtualenv: `pip install virtualenv`
