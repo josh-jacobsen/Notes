@@ -2,13 +2,19 @@
 
 What I'm using 
 ```
-launch="C:\Program Files (x86)\Google\Chrome\Application\chrome" $*
+doskey launch="C:\Program Files (x86)\Google\Chrome\Application\chrome" $*
 ```
 
 Do not specify the .exe (i.e. do not use:
 ```
 doskey launch="C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" $*
 ```
+
+Using the above with the following command: 
+```
+launch --headless --disable-gpu --enable-logging --dump-dom https://www.xero.com/
+```
+
 launch="C:\Program Files (x86)\Google\Chrome\Application\chrome" $*
 Which will give:
 
