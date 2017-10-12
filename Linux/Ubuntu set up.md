@@ -15,10 +15,11 @@ this from https://askubuntu.com/questions/792832/how-to-install-virtualbox-guest
 
 ### Enable features and give VM access to shared folders 
 
-1. Machine -> Settings -> General -> Advanced -> enable Shared Clipboard and/or Drag'n'Drop.
-2. Make sure View -> Auto-resize Guest Display is checked.
-3. Machine -> Settings -> Shared Folders -> Click "add" -> Tick "auto-mount"
-4. Restart the machine; shared folders should be under /media
+1. Devices -> enable Shared Clipboard and/or Drag'n'Drop.
+2. View -> Auto-resize Guest Display is checked.
+3. Machine -> Settings -> Shared Folders -> Click "add" -> Folder path (find folder on host machine) -> Tick "auto-mount"
+4. Run `sudo usermod -aG vboxsf $(whoami)`. This command will give the current user access to the shared folders; without it, permission will be denied 
+5. Restart the machine; shared folders should be under /media
 
 ### Add new user 
 
