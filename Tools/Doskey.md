@@ -15,13 +15,6 @@ Using the above with the following command:
 launch --headless --disable-gpu --enable-logging --dump-dom https://www.xero.com/
 ```
 
-launch="C:\Program Files (x86)\Google\Chrome\Application\chrome" $*
-Which will give:
-
-```
-launch https://www.chromestatus.com/
-```
-
 The below comes from https://room362.com/post/2011/2011-03-02-destructive-doskey-aliases/
 ```
 C:\Users\vmadmin>doskey /?
