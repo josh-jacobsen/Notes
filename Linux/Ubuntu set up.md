@@ -23,5 +23,14 @@ this from https://askubuntu.com/questions/792832/how-to-install-virtualbox-guest
 
 ### Add new user 
 
+##### Create the new user 
+`adduser newuser`
+
+##### Add the New User to the Sudo Group
+Check what groups your new user is in with the groups command: `groups newuser`, which will output `newuser : newuser`
+In order to add the user to a new group, we can use the `usermod` command: `usermod -aG sudo newuser`
+Swith to the new user, and try ad command that requires super user privilidges to see if it worked. 
+Add the new user to the `vboxsf` group by entering  the same command as above (`sudo usermod -aG vboxsf $(whoami)`). This will let the new user perform actions such as accessing shared folders, etc
+
 ### Install software 
 1. Terminator 
