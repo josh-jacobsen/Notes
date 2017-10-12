@@ -35,4 +35,5 @@ this from https://askubuntu.com/questions/792832/how-to-install-virtualbox-guest
 
 ### Install software 
 1. [Terminator:](https://www.tecmint.com/terminator-a-linux-terminal-emulator-to-manage-multiple-terminal-windows/) `apt-get install terminator`
+3. Git
 2. [Zsh & Oh My Zsh:](https://gist.github.com/renshuki/3cf3de6e7f00fa7e744a) 
