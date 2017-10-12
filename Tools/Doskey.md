@@ -2,9 +2,14 @@
 
 What I'm using 
 ```
-doskey launch="C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" $*
+launch="C:\Program Files (x86)\Google\Chrome\Application\chrome" $*
 ```
 
+Do not specify the .exe (i.e. do not use:
+```
+doskey launch="C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" $*
+```
+launch="C:\Program Files (x86)\Google\Chrome\Application\chrome" $*
 Which will give:
 
 ```
