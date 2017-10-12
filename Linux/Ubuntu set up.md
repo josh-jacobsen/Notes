@@ -8,37 +8,17 @@
 
 this from https://askubuntu.com/questions/792832/how-to-install-virtualbox-guest-additions-for-ubuntu-16-04:
 
-There is a guest additions package, but this only enabled some of the features for me.
+1. `apt-get update && apt-get upgrade`
+2. Restart the machine
+3. Devices -> "Install Guest Additions CD Image..."
+4. Restart 
 
-The most reliable way is probably to use the built-in installer that comes with VirtualBox.
+### Enable features and give VM access to shared folders 
 
-This is for Ubuntu Desktop. For Ubuntu Server, see @ThisClark's answer.
+1. Machine -> Settings -> General -> Advanced -> enable Shared Clipboard and/or Drag'n'Drop.
+2. Make sure View -> Auto-resize Guest Display is checked.
+3. Machine -> Settings -> Shared Folders -> Click "add" -> Tick "auto-mount"
+4. Restart the machine; shared folders should be under /media
 
-#### Updates
-
-Make sure you have the latest version of VirtualBox.
-It might be good to first sudo apt update and sudo apt upgrade and restart if needed.
-
-##### Guest Additions
-
-Power on virtual machine
-Click "Devices" on the VirtualBox menu at the top of the screen
-Click "Install Guest Additions CD Image..."
-Follow the on-screen prompts as needed, enter your password, etc.
-Restart the virtual machine
-
-##### Enable features
-
-Machine -> Settings -> General -> Advanced -> enable Shared Clipboard and/or Drag'n'Drop.
-Make sure View -> Auto-resize Guest Display is checked.
-
-### Give VM access to necessary host machine folders
-
-Machine -> Settings -> Shared Folders -> Click "add" -> Tick "auto-mount"
-
-Restart the machine and the folder should be under /media
-
-
+### Install software 
 1. Terminator 
-
-2. Simlink host directories that need to be accessed
