@@ -20,5 +20,7 @@ this from https://askubuntu.com/questions/792832/how-to-install-virtualbox-guest
 3. Machine -> Settings -> Shared Folders -> Click "add" -> Tick "auto-mount"
 4. Restart the machine; shared folders should be under /media
 
+### Add new user 
+
 ### Install software 
 1. Terminator 
