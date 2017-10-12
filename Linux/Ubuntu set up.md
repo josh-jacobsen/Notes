@@ -1,6 +1,8 @@
 # Ubuntu Virtual Machine Set Up
 
 ### Set up VM
+1. Give it a name, hard drive size, etc.
+2. Power on the VM and select the .iso image you want to use (Ubuntu 16.04 in this case)
 
 ### Install guest additions
 
