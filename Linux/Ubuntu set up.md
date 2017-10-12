@@ -1,8 +1,10 @@
 # Ubuntu Virtual Machine Set Up
 
-1. Set up VM
+### Set up VM
 
-2. Install guest additions (this from https://askubuntu.com/questions/792832/how-to-install-virtualbox-guest-additions-for-ubuntu-16-04):
+### Install guest additions
+
+this from https://askubuntu.com/questions/792832/how-to-install-virtualbox-guest-additions-for-ubuntu-16-04:
 
 There is a guest additions package, but this only enabled some of the features for me.
 
@@ -28,7 +30,7 @@ Restart the virtual machine
 Machine -> Settings -> General -> Advanced -> enable Shared Clipboard and/or Drag'n'Drop.
 Make sure View -> Auto-resize Guest Display is checked.
 
-3. Give VM access to necessary host machine folders
+### Give VM access to necessary host machine folders
 
 Machine -> Settings -> Shared Folders -> Click "add" -> Tick "auto-mount"
 
