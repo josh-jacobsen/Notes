@@ -21,3 +21,6 @@ Retrieving migrations that have been applied to the target database.
 To roll back a migration, specify the target migration as the migration immediatly before the one you want to roll back
 
 `EntityFramework\Update-Database -TargetMigration:"201912110144586_AddInsertNzPostDedicatedAndOvernightColumns"`
+
+`EntityFramework\Update-Database -TargetMigration:"202001070218551_AddRecipeCategorySelectionTable"`
+
