@@ -22,7 +22,7 @@ To roll back a migration, specify the target migration as the migration immediat
 
 `EntityFramework\Update-Database -TargetMigration:"201912110144586_AddInsertNzPostDedicatedAndOvernightColumns"`
 
-`EntityFramework\Update-Database -TargetMigration:"202001070218551_AddRecipeCategorySelectionTable"`
+`EntityFramework\Update-Database -TargetMigration:"202001070218551_AddRecipeCategorySelectionTable" -Verbose`
 
 `EntityFramework\Update-Database -TargetMigration:"202001070218551_AddRecipeCategorySelectionTable" -Script`
 
