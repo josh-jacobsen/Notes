@@ -4,4 +4,5 @@ Ensure default project is set to DataAccess/Data and start up project is set to 
 
 
 `EntityFramework\Add-Migration AddRecipeCategorySelectionTable -Project Data -StartupProject API`
-`EntityFramework\Update-Database`
+
+`EntityFramework\Update-Database -TargetMigration:"201912110144586_AddInsertNzPostDedicatedAndOvernightColumns"`
