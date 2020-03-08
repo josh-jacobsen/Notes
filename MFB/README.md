@@ -1,3 +1,9 @@
+##### Running Gateway
+
+`PS C:\dev\repository\src\gateway\source\src\MyFoodBag.Gateway.WebAPI\Client> yarn start`
+
+##### Running Emails 
+
 Start `MyFoodBag.Func.Billing` in debug 
 
 Open Azure Storage Explorer. Look for `Emulator - Deafult Ports (Key)` and under `Queues` will be `billing-email`
