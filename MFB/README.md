@@ -1,3 +1,6 @@
+##### Queues
+They live in storage accounts under `mfbauseasteventstst`/`prd` 
+
 ##### Running Gateway
 
 `PS C:\dev\repository\src\gateway\source\src\MyFoodBag.Gateway.WebAPI\Client> yarn start`
