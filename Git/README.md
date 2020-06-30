@@ -9,3 +9,9 @@ git pull
 git checkout <feature>
 git rebase master
 ```
+
+
+Remove all branches except those specified: 
+```
+git branch | grep -v "master\|voucher-delay" | xargs git branch -D 
+```
