@@ -1,4 +1,9 @@
 # Node
+```
+$env:NODE_OPTIONS="--max-http-header-size=15000"; yarn start
+```
+
+
 
 ```
 ╭─josh@Joshs-MacBook-Pro  ~/Documents/work/wind-alerts  ‹containers*›
