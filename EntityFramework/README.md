@@ -26,4 +26,7 @@ To roll back a migration, specify the target migration as the migration immediat
 
 `EntityFramework\Update-Database -TargetMigration:"202001070218551_AddRecipeCategorySelectionTable" -Script`
 
+### EF Core in the Customers Context
+`EntityFrameworkCore\Add-Migration RightSizeColumnsCredit -Project Data.Customers -StartupProject Data.Migrations`
+
 
