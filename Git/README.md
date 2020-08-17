@@ -15,3 +15,6 @@ Remove all branches except those specified:
 ```
 git branch | grep -v "master\|voucher-delay" | xargs git branch -D 
 ```
+```
+git branch | grep -v "master" | xargs git branch -D 
+```
