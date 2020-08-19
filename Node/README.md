@@ -2,9 +2,9 @@
 
 Setting header limits on Node so WDS doens't blow up:
 
-- `cmd`: `set NODE_OPTIONS "--max-http-header-size=15000" && npm run start`
-- `powershell`: `$env:NODE_OPTIONS="--max-http-header-size=15000"; npm run start`
-- `bash`: `NODE_OPTIONS="--max-http-header-size=15000" npm run start`
+- `cmd`: `set NODE_OPTIONS "--max-http-header-size=15000" && yarn start`
+- `powershell`: `$env:NODE_OPTIONS="--max-http-header-size=15000"; yarn start`
+- `bash`: `NODE_OPTIONS="--max-http-header-size=15000" yarn start`
 
 ```
 ╭─josh@Joshs-MacBook-Pro  ~/Documents/work/wind-alerts  ‹containers*›
