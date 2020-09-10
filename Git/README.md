@@ -20,6 +20,7 @@ git branch | grep -v "master" | xargs git branch -D
 ```
 
 Useful aliases to add: 
+```
 l=log --pretty=format:%C(yellow)%h\ %ad%Cred%d\ %Creset%s%Cblue\ [%cn] --decorate --date=short
 lg='git log --graph --oneline --decorate --all'
 a=add
@@ -52,3 +53,4 @@ cob=checkout -b
 b=!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'
 la=!git config -l | grep alias | cut -c 7-
 prune-local=!git branch | grep -v master | xargs git branch -D
+```
