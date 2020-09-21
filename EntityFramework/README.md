@@ -29,7 +29,7 @@ To roll back a migration, specify the target migration as the migration immediat
 ### EF Core in the Customers Context
 `EntityFrameworkCore\Add-Migration RightSizeColumnsCredit -Project Data.Customers -StartupProject Data.Migrations`
 
-### EF Core in the Stock Context
-`EntityFrameworkCore\Add-Migration RequireBufferStockCreationDate -Project Data.Stock -StartupProject Data.Migrations`
+### EF in the Stock Context
+`EntityFramework\Add-Migration RequireBufferStockCreationDate -Project Data.Stock -StartupProject API`
 
 
