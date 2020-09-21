@@ -32,4 +32,5 @@ To roll back a migration, specify the target migration as the migration immediat
 ### EF in the Stock Context
 `EntityFramework\Add-Migration RequireBufferStockCreationDate -Project Data.Stock -StartupProject API`
 
+`EntityFramework\Update-Database -TargetMigration:"202009090149047_AddBufferStockCreationDate"`
 
