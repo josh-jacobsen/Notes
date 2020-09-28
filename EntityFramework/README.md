@@ -1,3 +1,5 @@
+# Entity Framework notes
+
 Ensure default project is set to DataAccess/Data and start up project is set to API
 
 `EntityFramework\Enable-Migrations -ProjectName MyContextProjectNameHere -StartUpProjectName MyStartUpProjectNameHere -Verbose`
@@ -34,3 +36,20 @@ To roll back a migration, specify the target migration as the migration immediat
 
 `EntityFramework\Update-Database -TargetMigration:"202009090149047_AddBufferStockCreationDate"`
 
+
+## Other things 
+
+Setting up a thing and a one-to-one relationship to it 
+```
+[Index("IX_ThingOption_Thing", IsUnique = false, IsClustered = false)]
+public int ThingId { get; set; }
+
+[ForeignKey(nameof(ThingId))]
+public virtual Thing Thing { get; set; }
+```
+
+Setting up a one-to-many relationship 
+
+```
+public virtual ICollection<Thing> Things { get; set; } = new HashSet<Thing>();
+```
