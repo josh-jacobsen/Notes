@@ -1,16 +1,23 @@
 [core]
 	editor = \"C:/Users/Josh.Jacobsen/AppData/Local/Programs/Microsoft VS Code/code.exe\" --wait
 [merge]
-	tool = meld
+	tool = vscode
+	guitool = vscode
 [pull]
 	rebase = false
 [fetch]
 	prune = false
 [rebase]
 	autoStash = false
-[mergetool "meld"]
-	path = C:/Program Files (x86)/Meld/meld.exe
-	cmd = \"C:/Program Files (x86)/Meld/meld.exe\" \"$LOCAL\" \"$BASE\" \"$REMOTE\" --output \"$MERGED\"
+[mergetool "vscode"]
+	cmd = \"C:/Users/Josh.Jacobsen/AppData/Local/Programs/Microsoft VS Code/Code.exe\" --wait \"$MERGED\"
+	path = C:/Users/Josh.Jacobsen/AppData/Local/Programs/Microsoft VS Code/Code.exe
+[diff]
+	tool = vscode
+	guitool = vscode
+[difftool "vscode"]
+	cmd = \"C:/Users/Josh.Jacobsen/AppData/Local/Programs/Microsoft VS Code/Code.exe\" --wait --diff \"$LOCAL\" \"$REMOTE\"
+	path = C:/Users/Josh.Jacobsen/AppData/Local/Programs/Microsoft VS Code/Code.exe
 [user]
 	name = Josh Jacobsen
 	email = josh.jacobsen@myfoodbag.co.nz
