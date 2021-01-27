@@ -52,3 +52,12 @@ export HISTTIMEFORMAT="%F %T "
 # Note: use LC_ALL="C" if you want sort to behave in expected way.
 export LC_ALL="en_US.UTF-8"
 ```
+
+### bash_profile
+```
+# make .bash_profile same as .bashrc
+if [ -f "${HOME}/.bashrc" ]; then
+    source "${HOME}/.bashrc"
+fi
+
+```
