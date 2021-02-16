@@ -1,5 +1,15 @@
 # Bash
 
+### Using ssh keys
+
+```
+eval `ssh-agent.exe`
+
+
+ssh-add ~josh.jacobsen/.ssh/mfb_laptop
+Identity added: /c/Users/Josh.Jacobsen/.ssh/mfb_laptop (mfb_laptop)
+```
+
 ### .bashrc
 This is after I downloaded the Princeton algorithm course and borked my Gitbash setup. So this may not be useful.....
 
