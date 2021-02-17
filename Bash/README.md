@@ -11,33 +11,39 @@ Identity added: /c/Users/Josh.Jacobsen/.ssh/mfb_laptop (mfb_laptop)
 ```
 
 ### Auto-launching `ss-agent`
-Courtesy of [docs on Github](https://docs.github.com/en/github/authenticating-to-github/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows)
+Courtesy of [this gist](https://gist.github.com/bsara/5c4d90db3016814a3d2fe38d314f9c23)
 
 Add the following to `.bashrc`
 
 ```
-# Start SSH Agent and add key
-env=~/.ssh/agent.env
+# Start SSH Agent
+#----------------------------
 
-agent_load_env () { test -f "$env" && . "$env" >| /dev/null ; }
+SSH_ENV="$HOME/.ssh/environment"
 
-agent_start () {
-    (umask 077; ssh-agent >| "$env")
-    . "$env" >| /dev/null ; }
+function run_ssh_env {
+  . "${SSH_ENV}" > /dev/null
+}
 
-agent_load_env
+function start_ssh_agent {
+  echo "Initializing new SSH agent..."
+  ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
+  echo "succeeded"
+  chmod 600 "${SSH_ENV}"
 
-# agent_run_state: 0=agent running w/ key; 1=agent w/o key; 2= agent not running
-agent_run_state=$(ssh-add -l >| /dev/null 2>&1; echo $?)
+  run_ssh_env;
 
-if [ ! "$SSH_AUTH_SOCK" ] || [ $agent_run_state = 2 ]; then
-    agent_start
-    ssh-add ~josh.jacobsen/.ssh/mfb_laptop
-elif [ "$SSH_AUTH_SOCK" ] && [ $agent_run_state = 1 ]; then
-    ssh-add ~josh.jacobsen/.ssh/mfb_laptop
+  ssh-add ~josh.jacobsen/.ssh/mfb_laptop;
+}
+
+if [ -f "${SSH_ENV}" ]; then
+  run_ssh_env;
+  ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
+    start_ssh_agent;
+  }
+else
+  start_ssh_agent;
 fi
-
-unset env
 ```
 
 ### .bashrc
