@@ -10,6 +10,36 @@ ssh-add ~josh.jacobsen/.ssh/mfb_laptop
 Identity added: /c/Users/Josh.Jacobsen/.ssh/mfb_laptop (mfb_laptop)
 ```
 
+### Auto-launching `ss-agent`
+Courtesy of [docs on Github](https://docs.github.com/en/github/authenticating-to-github/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows)
+
+Add the following to `.bashrc`
+
+```
+# Start SSH Agent and add key
+env=~/.ssh/agent.env
+
+agent_load_env () { test -f "$env" && . "$env" >| /dev/null ; }
+
+agent_start () {
+    (umask 077; ssh-agent >| "$env")
+    . "$env" >| /dev/null ; }
+
+agent_load_env
+
+# agent_run_state: 0=agent running w/ key; 1=agent w/o key; 2= agent not running
+agent_run_state=$(ssh-add -l >| /dev/null 2>&1; echo $?)
+
+if [ ! "$SSH_AUTH_SOCK" ] || [ $agent_run_state = 2 ]; then
+    agent_start
+    ssh-add ~josh.jacobsen/.ssh/mfb_laptop
+elif [ "$SSH_AUTH_SOCK" ] && [ $agent_run_state = 1 ]; then
+    ssh-add ~josh.jacobsen/.ssh/mfb_laptop
+fi
+
+unset env
+```
+
 ### .bashrc
 This is after I downloaded the Princeton algorithm course and borked my Gitbash setup. So this may not be useful.....
 
