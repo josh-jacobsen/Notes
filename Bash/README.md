@@ -1,6 +1,8 @@
 # Bash
 
 ### Configuring colors
+[Here](https://misc.flogisoft.com/bash/tip_colors_and_formatting) is some good background 
+
 To get colors working, commands have to be invoked with `--color`. For example `ls -lah --color`
 
 Customise console colors by adding a `~.minttyrc` file
