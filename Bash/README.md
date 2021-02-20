@@ -1,5 +1,14 @@
 # Bash
 
+### Configuring colors
+Uncomment the line in `C:\Program Files\Git\etc\bash.bashrc` 
+```
+# Uncomment to use the terminal colours set in DIR_COLORS
+eval "$(dircolors -b /etc/DIR_COLORS)"
+```
+
+Add `~.minttyrc`
+
 ### Auto complete for git commands 
 Save the file from [here](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash) as `~/.git-completion.bash`
 
@@ -58,6 +67,9 @@ if [ -f ~/.git-prompt.sh ]; then
   . ~/.git-prompt.sh
 fi
 ```
+
+
+
 
 ### Using ssh keys
 
