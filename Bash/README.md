@@ -1,15 +1,9 @@
 # Bash
 
 ### Configuring colors
-Uncomment the line in `C:\Program Files\Git\etc\bash.bashrc` 
-```
-# Uncomment to use the terminal colours set in DIR_COLORS
-eval "$(dircolors -b /etc/DIR_COLORS)"
-```
-
-Add `~.minttyrc`
-
 To get colors working, commands have to be invoked with `--color`. For example `ls -lah --color`
+
+Customise console colors by adding a `~.minttyrc` file
 
 ### Auto complete for git commands 
 Save the file from [here](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash) as `~/.git-completion.bash`
