@@ -46,6 +46,13 @@ else
 fi
 ```
 
+### Auto complete for git commands 
+Save the file from [here](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash) as `~.git-completion.bash`
+
+Add `source ~/.git-completion.bash` to `.bashrc`
+
+
+
 ### .bashrc
 This is after I downloaded the Princeton algorithm course and borked my Gitbash setup. So this may not be useful.....
 
