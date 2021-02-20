@@ -9,6 +9,8 @@ eval "$(dircolors -b /etc/DIR_COLORS)"
 
 Add `~.minttyrc`
 
+To get colors working, commands have to be invoked with `--color`. For example `ls -lah --color`
+
 ### Auto complete for git commands 
 Save the file from [here](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash) as `~/.git-completion.bash`
 
