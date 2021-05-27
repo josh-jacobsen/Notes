@@ -1,6 +1,10 @@
 # GraphQL
 
 
+### Vital Response 
+
+#### Updating a lambda that reads from Kinesis
+
 #### Updating a GraphQL endpoint 
 
 1. Update the `schema.graphql` file at `/katoa/response/backend/reference/schema.graphql`
