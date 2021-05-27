@@ -4,7 +4,7 @@
 #### Updating a GraphQL endpoint 
 
 1. Update the `schema.graphql` file at `response/backend/reference/schema.graphql`
-2. Run the `yarn graphql:types` command to generate the output file?
+2. From `/katoa/response/backend` run `yarn graphql:types` command to generate the output file
 
 #### Calling a new GraphQL endpoint 
 1. Update the query file (for example `/katoa/response/patient/app/graphql/queries/visit.ts`)
