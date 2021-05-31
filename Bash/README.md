@@ -1,5 +1,9 @@
 # Bash
 
+### General 
+
+Use `set -x` to have a bash script verbose output everything its doing
+
 ### Configuring colors
 [Here](https://misc.flogisoft.com/bash/tip_colors_and_formatting) is some good background 
 
