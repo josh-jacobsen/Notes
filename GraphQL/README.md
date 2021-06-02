@@ -3,6 +3,9 @@
 
 ### Vital Response 
 
+#### Updating Protobuf files 
+Protobuf files live all over the place. Find the data platform ones and update the Vital Response backend and tehi commands. Then run protobuf compile from those repos
+
 #### Updating a lambda that reads from Kinesis
 
 #### Updating a GraphQL endpoint 
