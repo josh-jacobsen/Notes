@@ -93,6 +93,8 @@ grep -v -e "master" -e "vscode-improvements" -e "feature/KATOA-2808-Showing-care
  
  # prune all loacl branches (run from master)
  prune-local = !git branch | grep -v -e "master" | xargs git branch -D 
+ # with multiple branches:
+ # prune-local-master=!git branch | grep -v -e master -e vscode-improvements -e feature/KATOA-2808-Showing-care-team-sharee | xargs git branch -D
 
  # get latest from master and update all submodules 
  pull-and-update-submodules = "!git pull --recurse-submodules; git submodule update --remote --recursive"
