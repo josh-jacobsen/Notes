@@ -1,5 +1,6 @@
 # VS Code 
 
+VS Code settings file
 ```
 {
   "workbench.sideBar.location": "right",
@@ -23,5 +24,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "files.autoSave": "onFocusChange",
-  "w
+  "workbench.tree.indent": 30
+}
   ```
