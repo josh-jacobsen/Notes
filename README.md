@@ -7,6 +7,7 @@
   - zsh-autosuggestions
   - zsh-syntax-highlighting
   - fzf search 
+- Customise prompt (create in `custom/theme` and point `.zshrc` file to load the custom prompt)
 
 ### Troubleshooting 
 
