@@ -2,6 +2,7 @@
 
 ## Setting up a new Mac 
 - Install iTerm2
+  - Customise navigation through use of alt & command keys  
 - Install oh-my-zsh
 - Install plugins
   - zsh-autosuggestions
