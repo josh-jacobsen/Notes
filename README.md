@@ -1,8 +1,12 @@
 # Notes
 
 ## Setting up a new Mac 
-1. Install iTerm2
-2. Install oh-my-zsh
+- Install iTerm2
+- Install oh-my-zsh
+- Install plugins
+  - zsh-autosuggestions
+  - zsh-syntax-highlighting
+  - fzf search 
 
 ### Troubleshooting 
 
