@@ -5,7 +5,7 @@
   - Customise navigation through use of alt & command keys  
 - Install oh-my-zsh
 - Install plugins
-  - zsh-autosuggestions
+  - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
   - zsh-syntax-highlighting
   - fzf search 
 - Customise prompt (create in `.oh-my-zsh/custom/theme` and point `.zshrc` file to load the custom prompt)
