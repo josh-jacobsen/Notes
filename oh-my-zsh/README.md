@@ -1,11 +1,12 @@
 # Oh my zsh
 
 Folder structure: 
-
+```
 ~./.zshrc
 ~./.bashrc
 ~./.fzf.zsh
 ~./.fzf.bash
+```
 
 
 ## Plugins 
