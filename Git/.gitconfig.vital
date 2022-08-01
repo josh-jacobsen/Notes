@@ -53,6 +53,9 @@
  s = status -s
  co = checkout
  cob = checkout -b
+ 
+ psu ="!git push -u origin HEAD"
+ 
  # list branches sorted by last modified
  b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
 
