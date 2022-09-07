@@ -65,6 +65,10 @@ ZSH_THEME="carnifx"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# Install fzf using brew and then use `which fzf` to get the base path
+# This avoids having to load it as a plugin
+export FZF_BASE=/opt/homebrew/bin/fzf
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
