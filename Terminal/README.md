@@ -3,6 +3,12 @@
 ### iTerm2
 There's really only one, which is iTerm2
 
+Set the left option key to transmit Esc+ 
+
+
+<img width=50% src="https://user-images.githubusercontent.com/17820600/189553587-72e56528-2de2-47ac-9cfa-f7b34099e2dd.png">
+
+
 #### Setting navigation keys 
 
 Navigate to Profiles => Keys => Key Mappings 
