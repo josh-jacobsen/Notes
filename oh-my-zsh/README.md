@@ -59,6 +59,11 @@ fzf will display a history search when you hit ctrl + R
 #### Installation 
 Install it from https://github.com/junegunn/fzf
 
+```
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+```
+
 It will add the following line to the `.zshrc` file:
 ```
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
