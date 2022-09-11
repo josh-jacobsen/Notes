@@ -17,11 +17,11 @@ There are a couple of ways I've experimented with setting up hotkeys.
 
 The set up I'm using at the moment is 
 
-|Command| Action | Hex key/Escape sequence | Command | Action|
+|Shortcut| Command | Action | Hex key/Escape sequence | Misc |
 |-----|-----|-----|-----|---|
 |Jump to start of line|| ⌘ <-| Jump to start of line|
 |Jump to end of line|| ⌘ ->| Jump to end of line|
-|Move 1 word to the left|| ⌥ <-| Move 1 word to the left|
+| ⌥ <- |Move 1 word to the left|Escape sequence| b| 
 |Move 1 word to the right|| ⌥ ->| Move 1 word to the right|
 |Delete 1 word to the right|d| ⇧ ->| Delete 1 word to the right|
 |Delete 1 word to the left|0x1B 0x08| ⇧ <-| Delete 1 word to the left|
