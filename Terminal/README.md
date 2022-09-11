@@ -25,7 +25,7 @@ The set up I'm using at the moment is
 |⌥ -> | Move 1 word to the right|Escape sequence | f| Move 1 word to the right|
 |Delete 1 word to the right|d| ⇧ ->| Delete 1 word to the right|
 |Delete 1 word to the left|0x1B 0x08| ⇧ <-| Delete 1 word to the left|
-|Delete line|0x15| ⌘ Del| Delete line|
+| `⌘` `Del`| Delete line|Send Hex Codes|`0x15`|
 
 
 | Hex key | Command | Action|
