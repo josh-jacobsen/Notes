@@ -19,7 +19,7 @@ The set up I'm using at the moment is
 
 |Shortcut| Command | Action | Hex key/Escape sequence | Misc |
 |-----|-----|-----|-----|---|
-|⌘ <-|Jump to start of line|Send Hex Codes| `0x01`| Jump to end of line|
+|`⌘` `←`|Jump to start of line|Send Hex Codes| `0x01`| Jump to end of line|
 |⌘ ->| Jump to end of line| Send Hex Codes| `0x05`| Jump to end of line|
 | ⌥ <- |Move 1 word to the left|Escape sequence| b| 
 |⌥ -> | Move 1 word to the right|Escape sequence | f| Move 1 word to the right|
