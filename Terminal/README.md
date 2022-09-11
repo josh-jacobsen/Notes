@@ -22,7 +22,7 @@ The set up I'm using at the moment is
 |Jump to start of line|| ⌘ <-| Jump to start of line|
 |Jump to end of line|| ⌘ ->| Jump to end of line|
 | ⌥ <- |Move 1 word to the left|Escape sequence| b| 
-|Move 1 word to the right|| ⌥ ->| Move 1 word to the right|
+|⌥ -> | Move 1 word to the right|Escape sequence | f| Move 1 word to the right|
 |Delete 1 word to the right|d| ⇧ ->| Delete 1 word to the right|
 |Delete 1 word to the left|0x1B 0x08| ⇧ <-| Delete 1 word to the left|
 |Delete line|0x15| ⌘ Del| Delete line|
