@@ -11,15 +11,15 @@ There are a couple of ways I've experimented with setting up hotkeys.
 
 The set up I'm using at the moment is 
 
-| Hex key/Escape sequence | Command | Action|
-|-----|-----|---|
-|| ⌘ <-| Jump to start of line|
-|| ⌘ ->| Jump to end of line|
-|| ⌥ <-| Move 1 word to the left|
-|| ⌥ ->| Move 1 word to the right|
-|d| ⇧ ->| Delete 1 word to the right|
-|0x1B 0x08| ⇧ <-| Delete 1 word to the left|
-|0x15| ⌘ Del| Delete line|
+|Command| Action | Hex key/Escape sequence | Command | Action|
+|-----|-----|-----|-----|---|
+|Jump to start of line|| ⌘ <-| Jump to start of line|
+|Jump to end of line|| ⌘ ->| Jump to end of line|
+|Move 1 word to the left|| ⌥ <-| Move 1 word to the left|
+|Move 1 word to the right|| ⌥ ->| Move 1 word to the right|
+|Delete 1 word to the right|d| ⇧ ->| Delete 1 word to the right|
+|Delete 1 word to the left|0x1B 0x08| ⇧ <-| Delete 1 word to the left|
+|Delete line|0x15| ⌘ Del| Delete line|
 
 
 | Hex key | Command | Action|
