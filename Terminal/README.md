@@ -17,16 +17,17 @@ There are a couple of ways I've experimented with setting up hotkeys.
 
 The set up I'm using at the moment is 
 
-|Shortcut| Command | Action | Hex key/Escape sequence | Misc |
-|-----|-----|-----|-----|---|
-|`⌘` `←`|Jump to start of line|Send Hex Codes| `0x01`| Jump to end of line|
-|⌘ ->| Jump to end of line| Send Hex Codes| `0x05`| Jump to end of line|
-| ⌥ <- |Move 1 word to the left|Escape sequence| b| 
-|⌥ -> | Move 1 word to the right|Escape sequence | f| Move 1 word to the right|
-|Delete 1 word to the right|d| ⇧ ->| Delete 1 word to the right|
-|Delete 1 word to the left|0x1B 0x08| ⇧ <-| Delete 1 word to the left|
+|Shortcut| Command | Action | Hex key/Escape sequence | 
+|-----|-----|-----|-----|
+|`⌘` `←`|Jump to start of line|Send Hex Codes| `0x01`| 
+|`⌘` `→`| Jump to end of line| Send Hex Codes| `0x05`| 
+|`⌥` `←` |Move 1 word to the left|Escape sequence| `b`| 
+|`⌥` `→` | Move 1 word to the right|Escape sequence | `f`|
+|`⇧` `→`|Delete 1 word to the right|Escape sequence|`d`|
+|`⇧` `←`|Delete 1 word to the left|Send Hex Codes|`0x1B` `0x08`|
 | `⌘` `Del`| Delete line|Send Hex Codes|`0x15`|
 
+And here is what I had at some point in the past: 
 
 | Hex key | Command | Action|
 |-----|-----|---|
