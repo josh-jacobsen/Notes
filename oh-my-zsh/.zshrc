@@ -67,7 +67,8 @@ ZSH_THEME="carnifx"
 
 # Install fzf using brew and then use `which fzf` to get the base path
 # This avoids having to load it as a plugin
-export FZF_BASE=/opt/homebrew/bin/fzf
+# Commenting this out as it fell over and I reverted how I was doing it to loading the script below 
+# export FZF_BASE=/opt/homebrew/bin/fzf
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -103,3 +104,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
