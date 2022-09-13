@@ -6,5 +6,6 @@ brew install --cask \
     skitch \
     rectangle \
     iterm2 \
-    alfred
+    alfred \
+    lastpass
 ```
