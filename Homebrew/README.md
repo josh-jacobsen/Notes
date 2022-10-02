@@ -7,5 +7,6 @@ brew install --cask \
     rectangle \
     iterm2 \
     alfred \
-    lastpass
+    lastpass \
+    insomnia
 ```
