@@ -1,6 +1,10 @@
 # Notes
 
 ## Setting up a new Mac 
+
+The overview at https://sourabhbajaj.com/mac-setup/ is a great place to start. 
+
+
 - Install iTerm2
   - Customise navigation through use of alt & command keys  
 - Install oh-my-zsh
