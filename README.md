@@ -6,6 +6,8 @@ The overview at https://sourabhbajaj.com/mac-setup/ is a great place to start.
 
 Another good one is: https://www.chrisatmachine.com/posts/01-macos-developer-setup
 
+As is [Robin Wieruch's](https://www.robinwieruch.de/mac-setup-web-development/)
+
 - Install iTerm2
   - Customise navigation through use of alt & command keys  
 - Install oh-my-zsh
