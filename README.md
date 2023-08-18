@@ -19,6 +19,6 @@ As is [Robin Wieruch's](https://www.robinwieruch.de/mac-setup-web-development/)
 - Create aliases (create an `aliases.zsh` file in the `.oh-my-zsh/custom` directory. This will be automatically loaded)
 - Create git aliases (place in `~/.gitconfig`)
 
-### Troubleshooting 
+### Brewfile
 
-`iisReset`
+Using a Brewfile to migrate packages installed with `brew`. Follow [the guide here](https://openfolder.sh/macos-migrations-with-brewfile)
