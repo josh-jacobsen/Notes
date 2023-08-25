@@ -22,3 +22,10 @@ As is [Robin Wieruch's](https://www.robinwieruch.de/mac-setup-web-development/)
 ### Brewfile
 
 Using a Brewfile to migrate packages installed with `brew`. Follow [the guide here](https://openfolder.sh/macos-migrations-with-brewfile)
+
+### Setting up a new Mac
+1. Install x-code
+1. Install Iterm2
+1. Install homebrew
+2. Generate Github SSH keys 
+
